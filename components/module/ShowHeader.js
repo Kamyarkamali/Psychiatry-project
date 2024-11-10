@@ -15,15 +15,21 @@ export default function Header() {
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* لوگو */}
         <div className="text-2xl font-bold">
-          <Link className="hover:text-yellow-400" href="/">
-            روانپزشک
+          <Link className="hover:text-yellow-400 duration-300" href="/">
+            HuMAP
           </Link>
         </div>
 
-        <nav className="hidden md:flex gap-9 text-lg">
-          <Link href="/">صفحه اصلی</Link>
-          <Link href="/about">درباره ما</Link>
-          <Link href="/contact">تماس با ما</Link>
+        <nav className="hidden md:flex gap-9 text-lg ">
+          <Link className="hover:text-yellow-400 duration-300" href="/">
+            Home Page
+          </Link>
+          <Link className="hover:text-yellow-400 duration-300" href="/about">
+            About Us
+          </Link>
+          <Link className="hover:text-yellow-400 duration-300" href="/contact">
+            Contact Us
+          </Link>
         </nav>
 
         <div className="md:hidden">

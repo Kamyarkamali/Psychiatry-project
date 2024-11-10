@@ -11,7 +11,8 @@ export default function HeaderWrapper() {
     pathname === "/about" ||
     pathname === "/singup" ||
     pathname === "/login" ||
-    pathname === "about";
+    pathname === "about" ||
+    pathname === "/Product";
 
   return showHeader ? <ShowHeader /> : null;
 }

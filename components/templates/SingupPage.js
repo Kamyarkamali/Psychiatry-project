@@ -5,7 +5,7 @@ import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 
-function SingupPage() {
+function SignupPage() {
   const {
     register,
     handleSubmit,
@@ -17,13 +17,13 @@ function SingupPage() {
 
   const onSubmit = (data) => {
     console.log(data);
-    // ادامه فرآیند ثبت‌نام
+    // Continue the registration process
 
     if (data) {
-      toast.success("ثبت نام با موفقیت انجام شد");
+      toast.success("Signup successful");
       router.replace("/");
-    } else if (!data) {
-      toast.error("ثبت نام با خطا مواجه شد");
+    } else {
+      toast.error("Signup failed");
     }
   };
 
@@ -35,70 +35,72 @@ function SingupPage() {
 
           <div className="w-fit h-fit">
             <h1 className="text-2xl text-center mt-5 text-blue-400 font-bold">
-              ثبت نام
+              Signup
             </h1>
 
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="flex flex-col gap-5 lg:gap-3 items-center lg:items-start"
+              className="flex flex-col gap-5 lg:gap-3 items-center lg:items-start text-left"
             >
-              <label className="mr-6 text-start w-[300px] lg:mr-0">ایمیل</label>
+              <label className="ml-6 text-end w-[300px] lg:ml-0">Email</label>
               <input
                 type="email"
-                placeholder="ایمیل خود را وارد کنید"
+                placeholder="Enter your email"
                 {...register("email", {
-                  required: "ایمیل الزامی است",
+                  required: "Email is required",
                   pattern: {
                     value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-                    message: "قالب ایمیل معتبر نیست",
+                    message: "Invalid email format",
                   },
                 })}
-                className="lg:w-full w-[300px] p-2 border-[1px] outline-none rounded-lg border-gray-400"
+                className="lg:w-full w-[300px] p-2 border-[1px] outline-none rounded-lg border-gray-400 text-left"
               />
               {errors.email && (
-                <p className="text-red-500 text-sm">{errors.email.message}</p>
+                <p className="text-red-500 text-sm text-left">
+                  {errors.email.message}
+                </p>
               )}
 
-              <label className="mr-6 lg:mr-0 text-start w-[300px]">
-                رمز عبور
+              <label className="ml-6 lg:ml-0 text-end w-[300px]">
+                Password
               </label>
               <input
                 type="password"
-                placeholder="رمز عبور خود را وارد کنید"
+                placeholder="Enter your password"
                 {...register("password", {
-                  required: "رمز عبور الزامی است",
+                  required: "Password is required",
                   minLength: {
                     value: 8,
-                    message: "رمز عبور باید حداقل ۸ کاراکتر باشد",
+                    message: "Password must be at least 8 characters",
                   },
                   pattern: {
                     value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
-                    message: "رمز عبور باید شامل حروف و اعداد باشد",
+                    message: "Password must include letters and numbers",
                   },
                 })}
-                className="lg:w-full w-[300px] p-2 border-[1px] outline-none rounded-lg border-gray-400"
+                className="lg:w-full w-[300px] p-2 border-[1px] outline-none rounded-lg border-gray-400 text-left"
               />
               {errors.password && (
-                <p className="text-red-500 text-sm">
+                <p className="text-red-500 text-sm text-left">
                   {errors.password.message}
                 </p>
               )}
 
-              <label className="mr-6 lg:mr-0 text-start w-[300px]">
-                تکرار رمز عبور
+              <label className="ml-6 lg:ml-0 text-end w-[300px]">
+                Confirm Password
               </label>
               <input
                 type="password"
-                placeholder="تکرار رمز عبور خود را وارد کنید"
+                placeholder="Confirm your password"
                 {...register("confirmPassword", {
-                  required: "تکرار رمز عبور الزامی است",
+                  required: "Confirm password is required",
                   validate: (value) =>
-                    value === watch("password") || "رمز عبور ها مطابقت ندارند",
+                    value === watch("password") || "Passwords do not match",
                 })}
-                className="lg:w-full w-[300px] p-2 border-[1px] outline-none rounded-lg border-gray-400"
+                className="lg:w-full w-[300px] p-2 border-[1px] outline-none rounded-lg border-gray-400 text-left"
               />
               {errors.confirmPassword && (
-                <p className="text-red-500 text-sm">
+                <p className="text-red-500 text-sm text-left">
                   {errors.confirmPassword.message}
                 </p>
               )}
@@ -107,14 +109,14 @@ function SingupPage() {
                 type="submit"
                 className="lg:w-full w-[300px] p-2 bg-blue-500 rounded-lg text-white mt-5"
               >
-                ثبت نام
+                Signup
               </button>
 
-              <div className="flex gap-3 text-sm mt-10 justify-center w-full">
-                <p>قبلا ثبت نام کرده اید؟</p>
+              <div className="flex gap-3 text-sm mt-10 justify-center w-full text-left">
                 <Link className="text-blue-400 font-bold" href="/login">
-                  حساب کاربری
+                  Login
                 </Link>
+                <p>?Already have an account</p>
               </div>
             </form>
           </div>
@@ -125,4 +127,4 @@ function SingupPage() {
   );
 }
 
-export default SingupPage;
+export default SignupPage;

@@ -1,4 +1,5 @@
 // components/module
+import BtnLogin from "../element/BtnLogin";
 import CallBtn from "../element/CallBtn";
 import HamburgerMenu from "../module/HamburgerMenu";
 import LeftMenu from "../module/LeftMenu";
@@ -24,6 +25,9 @@ function HomePage() {
       </div>
       <div className="fixed right-0 z-30">
         <CallBtn />
+      </div>
+      <div className="fixed right-[20px] top-[20px] z-30 hidden lg:block">
+        <BtnLogin />
       </div>
     </div>
   );

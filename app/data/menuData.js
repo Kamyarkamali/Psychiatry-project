@@ -1,6 +1,7 @@
 export const menuData = [
-  { id: 1, name: "صفحه اصلی", path: "/" },
-  { id: 2, name: "ورود / ثبت نام", path: "/singup" },
-  { id: 3, name: "درباره ما", path: "/about" },
-  { id: 4, name: "تماس با ما", path: "/contact" },
+  { id: 1, name: "Home Page", path: "/" },
+  { id: 2, name: "SingUp / Login", path: "/singup" },
+  { id: 5, name: "Product", path: "/" },
+  { id: 3, name: "About Us", path: "/about" },
+  { id: 4, name: "Contact Us", path: "/contact" },
 ];

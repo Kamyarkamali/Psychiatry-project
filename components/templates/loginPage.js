@@ -18,10 +18,10 @@ function LoginPage() {
     console.log(data);
 
     if (data.email && data.password) {
-      toast.success("ورود با موفقیت انجام شد");
+      toast.success("Login successful");
       router.replace("/");
     } else {
-      toast.error("ورود با خطا مواجه شد");
+      toast.error("Login failed");
     }
   };
 
@@ -33,51 +33,53 @@ function LoginPage() {
 
           <div className="w-fit h-fit">
             <h1 className="text-2xl text-center mt-5 text-blue-400 font-bold">
-              ورود به اکانت
+              Login
             </h1>
 
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="flex flex-col gap-5 lg:gap-3 items-center lg:items-start"
+              className="flex flex-col gap-5 lg:gap-3 items-center lg:items-start text-left"
             >
-              <label className="mr-6 text-start w-[300px] lg:mr-0">ایمیل</label>
+              <label className="ml-6 text-end w-[300px] lg:ml-0">Email</label>
               <input
                 type="email"
-                placeholder="ایمیل خود را وارد کنید"
+                placeholder="Enter your email"
                 {...register("email", {
-                  required: "ایمیل الزامی است",
+                  required: "Email is required",
                   pattern: {
                     value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-                    message: "قالب ایمیل معتبر نیست",
+                    message: "Invalid email format",
                   },
                 })}
-                className="lg:w-full w-[300px] p-2 border-[1px] outline-none rounded-lg border-gray-400"
+                className="lg:w-full w-[300px] p-2 border-[1px] outline-none rounded-lg border-gray-400 text-left"
               />
               {errors.email && (
-                <p className="text-red-500 text-sm">{errors.email.message}</p>
+                <p className="text-red-500 text-sm text-left">
+                  {errors.email.message}
+                </p>
               )}
 
-              <label className="mr-6 lg:mr-0 text-start w-[300px]">
-                رمز عبور
+              <label className="ml-6 lg:ml-0 text-end w-[300px]">
+                Password
               </label>
               <input
                 type="password"
-                placeholder="رمز عبور خود را وارد کنید"
+                placeholder="Enter your password"
                 {...register("password", {
-                  required: "رمز عبور الزامی است",
+                  required: "Password is required",
                   minLength: {
                     value: 8,
-                    message: "رمز عبور باید حداقل ۸ کاراکتر باشد",
+                    message: "Password must be at least 8 characters",
                   },
                   pattern: {
                     value: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
-                    message: "رمز عبور باید شامل حروف و اعداد باشد",
+                    message: "Password must include letters and numbers",
                   },
                 })}
-                className="lg:w-full w-[300px] p-2 border-[1px] outline-none rounded-lg border-gray-400"
+                className="lg:w-full w-[300px] p-2 border-[1px] outline-none rounded-lg border-gray-400 text-left"
               />
               {errors.password && (
-                <p className="text-red-500 text-sm">
+                <p className="text-red-500 text-sm text-left">
                   {errors.password.message}
                 </p>
               )}
@@ -86,14 +88,14 @@ function LoginPage() {
                 type="submit"
                 className="lg:w-full w-[300px] p-2 bg-blue-500 rounded-lg text-white mt-5"
               >
-                ورود
+                Login
               </button>
 
-              <div className="flex gap-3 text-sm mt-10 justify-center w-full">
-                <p>ثبت‌ نام نکرده اید؟</p>
-                <Link className="text-blue-400 font-bold" href="/singup">
-                  ثبت نام
+              <div className="flex gap-3 text-sm mt-10 justify-center w-full text-left">
+                <Link className="text-blue-400 font-bold" href="/signup">
+                  Sign Up
                 </Link>
+                <p>?Not registered</p>
               </div>
             </form>
           </div>
