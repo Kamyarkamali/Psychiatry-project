@@ -2,32 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "iranYekan";
+  src: url("/fonts/woff2/IRANSansX-Regular.woff2") format("truetype");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: iranYekan, sans-serif;
+}
+
+.bg {
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: floatingBackground 10s ease-in-out infinite;
+}
+
+.bgsingup {
+  background-image: url("/images/singup.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: floatingBackground 10s ease-in-out infinite;
+}
+
+.bglogin {
+  background-image: url("/images/login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: floatingBackground 10s ease-in-out infinite;
+}
+
+@keyframes floatingBackground {
+  0% {
+    background-position: center;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  25% {
+    background-position: 55% 45%;
+  }
+  50% {
+    background-position: 50% 55%;
+  }
+  75% {
+    background-position: 45% 50%;
+  }
+  100% {
+    background-position: 50% 50%;
   }
 }
