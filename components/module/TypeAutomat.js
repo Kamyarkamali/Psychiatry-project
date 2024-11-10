@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 function TypeAutomat() {
   return (
-    <h1 className="text-6xl z-40 text-[#FFFF] fotn-bold">
+    <h1 className="lg:text-6xl text-3xl z-40 text-[#FFFF] fotn-bold">
       <Typewriter
         words={[
           "آموزش روانشناسی و روانپزشکی",

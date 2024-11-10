@@ -13,8 +13,8 @@ function HomePage() {
         <TypeAutomat />
       </div>
       <div className="flex justify-between">
-        <div className="w-[100%] m-auto flex justify-start h-[100vh] bg absolute top-0 ">
-          <div className="w-[1400px] mx-auto mt-9 mr-8 lg:hidden">
+        <div className="lg:w-[100%] lg:left-0 left-[-20px] overflow-hidden w-[780px] ml-4 m-auto flex justify-start h-[100vh] bg absolute top-0 ">
+          <div className="mx-auto z-40 mt-9 mr-8 lg:hidden fixed right-0 w-full">
             <HamburgerMenu />
           </div>
         </div>

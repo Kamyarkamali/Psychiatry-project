@@ -27,10 +27,7 @@ export default function Header() {
         </nav>
 
         <div className="md:hidden">
-          <button
-            onClick={toggleMenu}
-            className="text-3xl focus:outline-none hover:text-yellow-400"
-          >
+          <button onClick={toggleMenu} className="text-3xl focus:outline-none">
             {isOpen ? "✖" : "☰"}
           </button>
         </div>
@@ -38,7 +35,7 @@ export default function Header() {
 
       {/* منوی همبرگری - برای موبایل */}
       {isOpen && (
-        <div className="md:hidden bg-purple-600 text-center p-4">
+        <div className="md:hidden text-center p-4">
           <Link
             className="block py-2 text-lg hover:text-yellow-400"
             onClick={toggleMenu}
@@ -53,13 +50,7 @@ export default function Header() {
           >
             درباره ما
           </Link>
-          <Link
-            className="block py-2 text-lg hover:text-yellow-400"
-            onClick={toggleMenu}
-            href="/services"
-          >
-            خدمات
-          </Link>
+
           <Link
             className="block py-2 text-lg hover:text-yellow-400"
             onClick={toggleMenu}
