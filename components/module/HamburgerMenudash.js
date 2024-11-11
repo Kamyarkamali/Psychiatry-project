@@ -1,3 +1,4 @@
+"use client";
 import { dataDashboard } from "@/app/data/menuData";
 import React from "react";
 import { IoMdClose } from "react-icons/io";
