@@ -1,5 +1,6 @@
 "use client";
 import { dataDashboard } from "@/app/data/menuData";
+import Link from "next/link";
 import React from "react";
 import { IoMdClose } from "react-icons/io";
 
@@ -15,11 +16,13 @@ function HamburgerMenudash({ setOpen2 }) {
       {dataDashboard.map((item) => (
         <ul className="flex items-center gap-4 mt-5 p-2">
           <li className="hover:font-bold hover:scale-105 transition-all duration-300 cursor-pointer">
-            {item.icon}
+            <Link href={item.title === "Home" ? "/" : ""}>{item.icon}</Link>
           </li>
-          <li className="hover:font-bold hover:scale-105 transition-all duration-300 cursor-pointer">
-            {item.title}
-          </li>
+          <Link href={item.title === "Home" ? "/" : ""}>
+            <li className="hover:font-bold hover:scale-105 transition-all duration-300 cursor-pointer">
+              {item.title}
+            </li>
+          </Link>
         </ul>
       ))}
     </div>

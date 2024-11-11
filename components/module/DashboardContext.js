@@ -346,7 +346,7 @@ function DashboardContent() {
               </p>
               <div className="flex flex-col ml-3">
                 <p>James Brown</p>
-                <p className="text-sm text-white bg-red-400 rounded-sm">
+                <p className="text-sm w-[110px] text-center text-white bg-red-400 rounded-sm">
                   OFFLINE
                 </p>
               </div>
@@ -362,7 +362,7 @@ function DashboardContent() {
               </p>
               <div className="flex flex-col ml-3">
                 <p>Jack light</p>
-                <p className="text-sm text-white w-[90px] bg-green-400 rounded-sm">
+                <p className="text-sm w-[110px] text-center text-white bg-green-400 rounded-sm">
                   ONLINE
                 </p>
               </div>
@@ -373,12 +373,12 @@ function DashboardContent() {
             </div>
 
             <div className="relative flex items-center justify-between w-full border-b-2 p-2">
-              <p className="bg-green-500 w-[70px] text-white mt-4 text-center  items-center flex justify-center h-[20px] p-[1px] text-[10px] rounded-md">
+              <p className="bg-green-500 w-[70px] text-white mt-4 text-center  items-center flex justify-center h-[20px] p-[1px]  text-[10px] rounded-md">
                 ONLINE
               </p>
               <div className="flex flex-col ml-3">
                 <p>Sophia Smith</p>
-                <p className="text-sm text-white bg-green-400 rounded-sm">
+                <p className="text-sm w-[110px] text-center text-white bg-green-400 rounded-sm">
                   ONLINE
                 </p>
               </div>
@@ -389,12 +389,12 @@ function DashboardContent() {
             </div>
 
             <div className="relative flex items-center justify-between w-full border-b-2 p-2">
-              <p className="bg-green-500 w-[70px] text-white mt-4 text-center  items-center flex justify-center h-[20px] p-[1px] text-[10px] rounded-md">
+              <p className="bg-green-500  w-[70px] text-white mt-4 text-center  items-center flex justify-center h-[20px] p-[1px] text-[10px] rounded-md">
                 ONLINE
               </p>
               <div className="flex flex-col ml-3">
                 <p>Emily Johnson</p>
-                <p className="text-sm text-white bg-green-400 rounded-sm">
+                <p className="text-sm w-[110px] text-white text-center bg-green-400 rounded-sm">
                   ONLINE
                 </p>
               </div>
@@ -405,12 +405,12 @@ function DashboardContent() {
             </div>
 
             <div className="relative flex items-center justify-between w-full border-b-2 p-2">
-              <p className="bg-green-500 w-[70px] text-white mt-4 text-center  items-center flex justify-center h-[20px] p-[1px] text-[10px] rounded-md">
+              <p className="bg-green-500  w-[70px] text-white mt-4 text-center  items-center flex justify-center h-[20px] p-[1px] text-[10px] rounded-md">
                 ONLINE
               </p>
               <div className="flex flex-col ml-3">
                 <p>Olivia Davis</p>
-                <p className="text-sm text-white bg-green-400 rounded-sm">
+                <p className="text-sm text-white w-[110px] text-center bg-green-400 rounded-sm">
                   ONLINE
                 </p>
               </div>
