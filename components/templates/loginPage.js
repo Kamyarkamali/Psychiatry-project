@@ -27,7 +27,7 @@ function LoginPage() {
 
   return (
     <>
-      <div className="flex items-center h-[700px] justify-center w-full">
+      <div className="flex items-center h-[700px] justify-center w-full mt-14">
         <div className="flex lg:shadow-lg shadow-gray-300 rounded-lg p-4">
           <div className="w-[500px] h-[500px] bglogin hidden lg:block"></div>
 
@@ -92,7 +92,7 @@ function LoginPage() {
               </button>
 
               <div className="flex gap-3 text-sm mt-10 justify-center w-full text-left">
-                <Link className="text-blue-400 font-bold" href="/signup">
+                <Link className="text-blue-400 font-bold" href="/singup">
                   Sign Up
                 </Link>
                 <p>?Not registered</p>

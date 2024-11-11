@@ -29,7 +29,7 @@ function SignupPage() {
 
   return (
     <>
-      <div className="flex items-center h-[700px] justify-center w-full">
+      <div className="flex mt-14 items-center h-[700px] justify-center w-full">
         <div className="flex lg:shadow-lg shadow-gray-300 rounded-lg p-4">
           <div className="w-[500px] h-[500px] bgsingup hidden lg:block"></div>
 
