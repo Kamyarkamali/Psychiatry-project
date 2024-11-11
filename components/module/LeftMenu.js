@@ -42,7 +42,7 @@ function LeftMenu() {
           !open ? "block" : "hidden"
         } bottom-20 w-full flex flex-col items-center gap-5`}
       >
-        <h1 className="text-center">Sochial Media</h1>
+        <h1 className="text-center">"Social Media"</h1>
         <div className="flex gap-5">
           <FaLinkedin size={20} className="cursor-pointer" />
           <IoLogoInstagram size={20} className="cursor-pointer" />

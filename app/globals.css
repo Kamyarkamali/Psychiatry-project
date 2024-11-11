@@ -50,19 +50,19 @@
 .wave-background {
   background: linear-gradient(
     45deg,
-    #e0f7fa,
-    #b2ebf2,
-    #4dd0e1,
-    #26c6da,
-    #00bcd4
+    #373b3b,
+    #505e5f,
+    #202c2d,
+    #0d4a53,
+    #1e2020
   );
   background: linear-gradient(
     45deg,
-    #e0f7fa,
-    #b2ebf2,
-    #4dd0e1,
-    #26c6da,
-    #00bcd4
+    #223032,
+    #4e6c6f,
+    #174045,
+    #1f3437,
+    #2b393a
   );
   background-size: 400% 400%;
   animation: waveAnimation 16s linear infinite;
