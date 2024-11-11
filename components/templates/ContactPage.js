@@ -21,7 +21,7 @@ export default function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // پردازش اطلاعات فرم یا ارسال به سرور
+    // Process form data or send to the server
     console.log("Form submitted:", formData);
   };
 
@@ -29,11 +29,11 @@ export default function ContactUs() {
     <div className="min-h-screen mt-14 bg-gradient-to-r from-purple-50 to-purple-100 py-10 px-6 sm:px-12 md:px-24 flex items-center justify-center">
       <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
         <h1 className="text-3xl font-bold text-purple-700 text-center mb-4">
-          تماس با ما
+          Contact Us
         </h1>
         <p className="text-gray-600 text-center mb-6">
-          با ما در تماس باشید! ما اینجا هستیم تا به سؤالات و نیازهای شما پاسخ
-          دهیم. پیام خود را ارسال کنید و به زودی با شما تماس خواهیم گرفت.
+          Get in touch with us! We are here to answer your questions and meet
+          your needs. Send us a message, and we will get back to you soon.
         </p>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
@@ -41,7 +41,7 @@ export default function ContactUs() {
               htmlFor="name"
               className="block text-sm font-medium text-gray-700"
             >
-              نام شما
+              Your Name
             </label>
             <input
               type="text"
@@ -58,7 +58,7 @@ export default function ContactUs() {
               htmlFor="email"
               className="block text-sm font-medium text-gray-700"
             >
-              ایمیل شما
+              Your Email
             </label>
             <input
               type="email"
@@ -75,7 +75,7 @@ export default function ContactUs() {
               htmlFor="message"
               className="block text-sm font-medium text-gray-700"
             >
-              پیام شما
+              Your Message
             </label>
             <textarea
               id="message"
@@ -91,15 +91,15 @@ export default function ContactUs() {
             type="submit"
             className="w-full py-3 bg-purple-700 text-white font-semibold rounded-lg hover:bg-purple-800 transition-colors"
           >
-            ارسال پیام
+            Send Message
           </button>
         </form>
 
-        {/* بخش راه‌های ارتباطی */}
+        {/* Contact Methods */}
         <div className="mt-10 text-center text-gray-600">
-          <p>همچنین می‌توانید از طریق روش‌های زیر با ما در ارتباط باشید:</p>
+          <p>You can also reach us through the following methods:</p>
           <p className="flex items-center justify-center gap-2 mt-2 text-purple-700 font-medium">
-            <FaPhoneAlt className="text-purple-600" /> 091222222222
+            <FaPhoneAlt className="text-purple-600" /> +1 123 456 7890
           </p>
           <div className="flex justify-center gap-4 mt-4">
             <a
@@ -126,6 +126,23 @@ export default function ContactUs() {
             >
               <FaLinkedin />
             </a>
+          </div>
+        </div>
+
+        {/* Kurdistan, Iran Map */}
+        <div className="mt-10">
+          <h2 className="text-2xl font-bold text-purple-700 text-center mb-4">
+            Our Location
+          </h2>
+          <div className="w-full h-64 md:h-80">
+            <iframe
+              className="w-full h-full rounded-lg"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5067024.597674488!2d44.58231194518464!3d35.321874120589486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ffefda038c324b9%3A0x42df1332a7afdf93!2sKurdistan%20Province%2C%20Iran!5e0!3m2!1sen!2s!4v1696250548964!5m2!1sen!2s"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Map of Kurdistan, Iran"
+            ></iframe>
           </div>
         </div>
       </div>

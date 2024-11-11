@@ -47,14 +47,14 @@ export default function Header() {
             onClick={toggleMenu}
             href="/"
           >
-            صفحه اصلی
+            Home Page
           </Link>
           <Link
             className="block py-2 text-lg hover:text-yellow-400"
             onClick={toggleMenu}
             href="/about"
           >
-            درباره ما
+            About Us
           </Link>
 
           <Link
@@ -62,7 +62,7 @@ export default function Header() {
             onClick={toggleMenu}
             href="/contact"
           >
-            تماس با ما
+            Contact Us
           </Link>
         </div>
       )}

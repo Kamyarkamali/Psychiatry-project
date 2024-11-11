@@ -14,9 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en" dir="rtl">
       <body className={inter.className}>
         <Headerpages />
-        <main>
-          <AntdRegistry>{children}</AntdRegistry>
-        </main>
+        <main>{children}</main>
       </body>
     </html>
   );
