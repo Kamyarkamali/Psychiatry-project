@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { IoMdNotificationsOutline } from "react-icons/io";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { IoIosSearch } from "react-icons/io";
-import { RxHamburgerMenu } from "react-icons/rx";
 
 function HeaderDashboard() {
   const [search, setSSearch] = useState(false);

@@ -3,12 +3,12 @@ import { dataDashboard } from "@/app/data/menuData";
 import React from "react";
 import { IoMdClose } from "react-icons/io";
 
-function HamburgerMenudash({ open, setOpen }) {
+function HamburgerMenudash({ setOpen2 }) {
   return (
     <div className="w-[300px] h-[100vh] bg-slate-100 rounded-md shadow-md shadow-gray-300 relative">
       <div
         className="absolute left-0 cursor-pointer"
-        onClick={() => setOpen(false)}
+        onClick={() => setOpen2(false)}
       >
         <IoMdClose size={30} />
       </div>

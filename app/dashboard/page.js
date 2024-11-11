@@ -1,15 +1,13 @@
-"use client";
 import DashboardContext from "@/components/module/DashboardContext";
 import HamburgerMenudash from "@/components/module/HamburgerMenudash";
 import HeaderDashboard from "@/components/module/HeaderDashboard";
 import LeftMenuDashboard from "@/components/module/LeftMenuDashboard";
 import RighDashboard from "@/components/module/RighDashboard";
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 function Page() {
-  const [open, setOpen] = useState(false);
-
+  const { open2, setOpen2 } = useContext();
   return (
     <>
       <div className="z-30 relative  top-[1rem] right-[1rem] lg:hidden">
@@ -20,10 +18,10 @@ function Page() {
         />
         <div
           className={`absolute transition-all duration-300 ease-out top-[-33px] ${
-            !open ? "right-[-100%]" : "right-[-10px]"
+            !open2 ? "right-[-100%]" : "right-[-10px]"
           }`}
         >
-          <HamburgerMenudash open={open} setOpen={setOpen} />
+          <HamburgerMenudash open={open2} setOpen={setOpen2} />
         </div>
       </div>
 
