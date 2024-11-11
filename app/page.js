@@ -5,9 +5,7 @@ import { AppProvider } from "@/context/AppContext";
 export default function Home() {
   return (
     <main>
-      <AppProvider>
-        <HomePage />
-      </AppProvider>
+      <HomePage />
     </main>
   );
 }

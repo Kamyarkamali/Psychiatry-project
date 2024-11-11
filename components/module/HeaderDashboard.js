@@ -7,6 +7,8 @@ import { IoIosSearch } from "react-icons/io";
 function HeaderDashboard() {
   const [search, setSSearch] = useState(false);
 
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="flex relative max-w-[1200px] mx-auto justify-around mt-5">
       <div className="flex items-center gap-5">
