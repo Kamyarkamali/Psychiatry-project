@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Headerpages from "@/components/module/Headerpages";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -13,7 +14,9 @@ export default function RootLayout({ children }) {
     <html lang="en" dir="rtl">
       <body className={inter.className}>
         <Headerpages />
-        <main>{children}</main>
+        <main>
+          <AntdRegistry>{children}</AntdRegistry>
+        </main>
       </body>
     </html>
   );
