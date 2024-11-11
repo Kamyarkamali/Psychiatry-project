@@ -6,8 +6,11 @@ import { AppProvider } from "@/context/AppContext";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "روانپزشکی آرمان",
-  description: "روانپزشکی و مشاوره",
+  title: "HuMAP",
+  description: "Psychiatry and counseling",
+  icons: {
+    icon: "/images/logo.jpg",
+  },
 };
 
 export default function RootLayout({ children }) {
