@@ -11,12 +11,15 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-purple-700 text-white shadow-md fixed top-0 left-0 right-0 z-10">
+    <header className="bg-[#242424] text-white shadow-md fixed top-0 left-0 right-0 z-10">
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* لوگو */}
         <div className="text-2xl font-bold">
           <Link className="hover:text-yellow-400 duration-300" href="/">
-            HuMAP
+            <img
+              className="w-[90px] h-[80px] rounded-[100%]"
+              src="/images/logo.jpg"
+            />
           </Link>
         </div>
 

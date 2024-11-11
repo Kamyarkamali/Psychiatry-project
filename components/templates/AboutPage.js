@@ -8,10 +8,13 @@ export default function AboutUs() {
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-6"> AboutUs</h1>
         <p className="text-gray-600 text-lg leading-relaxed mb-8">
-          We are here to help you regain peace and mental well-being. Our team
-          consists of psychiatry and psychology professionals who, with
-          knowledge and experience, are by your side to comprehensively support
-          your improvements
+          At HuMAP, we're redefining workplace mental health and stress
+          prevention through continuous monitoring and preventive actions. Our
+          innovative platform blends objective and subjective data, allowing
+          companies to proactively address mental health challenges, foster
+          well-being, and build resilient, engaged teams. With our roots in data
+          science and stress management research, we’re committed to creating a
+          supportive, healthy, and productive work environment for everyone.
         </p>
         <div className="flex flex-col md:flex-row items-center gap-8">
           <Image
@@ -22,13 +25,20 @@ export default function AboutUs() {
             className="rounded-full shadow-lg"
           />
           <div className="text-left max-w-lg">
-            <h2 className="text-2xl text-center font-semibold text-gray-700 mb-4">
+            {/* <h2 className="text-2xl text-center font-semibold text-gray-700 mb-4">
               Dr. Saman Rezaei
-            </h2>
+            </h2> */}
             <p className="text-gray-600 leading-relaxed">
-              With over 15 years of experience in psychiatry, Dr. Saman Rezaei
-              helps his clients overcome life’s challenges and move toward a
-              calmer, higher-quality life using the latest scientific methods.
+              At HuMAP, we are revolutionizing workplace mental health and
+              stress prevention through proactive, continuous monitoring and
+              targeted interventions. Our cutting-edge platform integrates both
+              objective and subjective data, enabling companies to identify and
+              address mental health challenges before they escalate. By
+              fostering a culture of well-being, we help organizations build
+              resilient, motivated teams that are engaged and productive. Our
+              foundation is rooted in data science and stress management
+              research, allowing us to offer evidence-based solutions that are
+              both effective and scalable.
             </p>
           </div>
         </div>
