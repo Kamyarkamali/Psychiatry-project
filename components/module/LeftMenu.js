@@ -8,7 +8,7 @@ import { GrClose } from "react-icons/gr";
 import TitleMenu from "./TitleMenu";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoLogoInstagram } from "react-icons/io5";
-import { BsTelegram } from "react-icons/bs";
+import { FaXTwitter } from "react-icons/fa6";
 
 function LeftMenu() {
   const { open, setOpen } = useAppContext();
@@ -45,10 +45,10 @@ function LeftMenu() {
         <div className="flex gap-5 mb-7">
           <FaLinkedin size={20} className="cursor-pointer" />
           <IoLogoInstagram size={20} className="cursor-pointer" />
-          <BsTelegram size={20} className="cursor-pointer" />
+          <FaXTwitter size={20} className="cursor-pointer" />
         </div>
         <img
-          className="w-[100px] rounded-md h-[80xp] object-cover"
+          className="w-[100px]  mb-[-60px] rounded-md h-[80xp] object-cover"
           src="/images/logo.jpg"
         />
       </div>

@@ -14,7 +14,6 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import { HiOutlineStatusOnline } from "react-icons/hi";
 import { IoMdTime } from "react-icons/io";
 import { MdComputer } from "react-icons/md";
 import { MdAccessTimeFilled } from "react-icons/md";
@@ -121,7 +120,7 @@ function DashboardContent() {
   };
 
   return (
-    <div className="p-8 min-h-screen">
+    <div className="p-8 min-h-screen lg:mt-[-4rem] mt-[-1rem]">
       <div className="w-full hidden lg:block mb-9">
         <HeaderDashboard />
       </div>
@@ -133,7 +132,7 @@ function DashboardContent() {
               See All
             </p>
 
-            <h2 className="text-xl font-bold text-gray-700 mb-4">
+            <h2 className="text-md font-bold text-gray-700 mb-4">
               Take Proactive Action
             </h2>
           </div>
@@ -241,7 +240,7 @@ function DashboardContent() {
               <p className="text-sm">See All</p>
             </div>
             <div className="flex gap-2">
-              <h2 className="text-md w-full font-bold text-gray-700 mb-4">
+              <h2 className="text-md w-full font-bold text-gray-700 mb-4 text-sm">
                 Identify Stress Triggers
               </h2>
               <IoMdTime size={30} />
@@ -306,7 +305,7 @@ function DashboardContent() {
           <h2 className="text-md font-bold text-gray-700 mb-4">
             Optimize workforce Performance
           </h2>
-          <div className="w-full h-full max-w-md">
+          <div className="w-full h-full max-w-md flex justify-center items-center">
             <Doughnut data={doughnutData} />
           </div>
         </div>
@@ -316,7 +315,7 @@ function DashboardContent() {
           <h2 className="text-xl font-bold text-gray-700 mb-4">
             Vehicle Speed
           </h2>
-          <div className="w-full max-w-md">
+          <div className="w-full max-w-md flex flex-col items-center justify-center h-full">
             <GaugeChart
               className="flex justify-center items-center"
               id="gauge-chart"

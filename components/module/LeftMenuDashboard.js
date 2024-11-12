@@ -16,13 +16,13 @@ function LeftMenuDashboard() {
         </div>
         <div className="flex flex-col items-center">
           <Image
-            className="w-[60px] rounded-full"
+            className="w-[60px] rounded-md"
             src={"/images/logo.jpg"}
             width={200}
             height={200}
             alt="logo"
           />
-          <p className="text-sm text-gray-500">Hr Manegement</p>
+          <p className="text-sm text-gray-500 mt-3">Hr Manegement</p>
         </div>
       </div>
 
