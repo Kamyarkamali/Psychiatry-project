@@ -12,7 +12,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="bg-gray-800 text-white flex flex-col justify-center items-center px-4 py-12 h-fit backdrop-blur-sm bg-opacity-30">
+    <div className="bg-gray-800 lg:w-fit rounded-md text-white flex flex-col justify-center items-center px-4 py-12 h-fit backdrop-blur-sm bg-opacity-30">
       <div className="flex gap-2 justify-center items-center border-b-[1px] ">
         <div className="flex items-center mb-7 ">
           <MdArrowRightAlt />
