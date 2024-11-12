@@ -23,7 +23,7 @@ function HamburgerMenu() {
         <ul className="flex flex-col relative items-center justify-center ml-6 h-[500px]">
           {menuData.map((item) => (
             <Link
-              className="cursor-pointer hover:scale-105 hover:duration-300 hover:font-semibold  text-lg mt-5 p-5 flex flex-col items-center transform transition-transform duration-300"
+              className="cursor-pointer hover:scale-105 hover:duration-300 hover:font-semibold  text-lg mt-5 p-3 flex flex-col items-center transform transition-transform duration-300"
               key={item.id}
               href={item.path}
             >
