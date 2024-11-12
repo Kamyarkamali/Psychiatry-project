@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { IoCallOutline } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
+import { AiOutlineMessage } from "react-icons/ai";
 
 function CallBtn() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,13 +39,13 @@ function CallBtn() {
       >
         <div>
           {isOpen ? (
-            <IoMdClose
+            <AiOutlineMessage
               size={30}
               color="white"
               className={`${isOpen ? "hidden" : "block"}`}
             />
           ) : (
-            <IoCallOutline size={30} color="white" />
+            <AiOutlineMessage size={30} color="white" />
           )}
           <IoMdClose
             size={30}

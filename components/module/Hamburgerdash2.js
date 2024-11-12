@@ -13,7 +13,7 @@ function Hamburgerdash2() {
 
   return (
     <>
-      <div className="z-30 relative  top-[1rem] right-[1rem] lg:hidden">
+      <div className="z-30 relative top-[1rem] right-[1rem] lg:hidden">
         <RxHamburgerMenu
           onClick={() => setOpen2(true)}
           size={30}
@@ -33,24 +33,29 @@ function Hamburgerdash2() {
         <DashboardContext />
       </div>
 
-      {/* نمایش فقط در سایز‌های بزرگ‌تر از موبایل */}
-      <div className="hidden lg:block">
-        <HeaderDashboard />
-      </div>
-      <div className="lg:flex hidden justify-between min-h-screen p-5">
-        {/* نوار کناری سمت چپ */}
-        <div className="w-[340px] p-5 rounded-lg text-left">
-          <RighDashboard />
-        </div>
+      {/* نمایش در سایز‌های بزرگ‌تر از موبایل */}
+      <div className="hidden lg:flex flex-col items-center min-h-screen p-5 space-y-5">
+        {/* هدر مرکزی */}
+        {/* <div className="w-full">
+          <HeaderDashboard />
+        </div> */}
 
-        {/* محتوای مرکزی */}
-        <div className="w-3/5 bg-white p-5 rounded-lg text-center">
-          <DashboardContext />
-        </div>
+        {/* محتوای داشبورد */}
+        <div className="flex justify-between w-full h-full">
+          {/* نوار کناری سمت چپ */}
+          <div className="w-[340px] p-5 rounded-lg text-left">
+            <RighDashboard />
+          </div>
 
-        {/* نوار کناری سمت راست */}
-        <div className="w-1/5 hidden lg:block shadow-md border-r-2 p-5 rounded-lg text-right">
-          <LeftMenuDashboard />
+          {/* محتوای مرکزی */}
+          <div className="w-3/5 bg-white p-5 rounded-lg text-center">
+            <DashboardContext />
+          </div>
+
+          {/* نوار کناری سمت راست */}
+          <div className="w-1/5 hidden lg:block h-fit shadow-md border-r-2 p-5 rounded-lg text-right">
+            <LeftMenuDashboard />
+          </div>
         </div>
       </div>
     </>

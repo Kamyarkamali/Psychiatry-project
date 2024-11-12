@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
+import { MdArrowRightAlt } from "react-icons/md";
 
 const Accordion = () => {
   const [isOpen, setIsOpen] = useState(null);
@@ -11,10 +13,20 @@ const Accordion = () => {
 
   return (
     <div className="bg-gray-800 text-white flex flex-col justify-center items-center px-4 py-12 h-fit backdrop-blur-sm bg-opacity-30">
-      <h1 className="text-3xl font-bold text-center mb-6">?Why choose HuMAP</h1>
-
+      <div className="flex gap-2 justify-center items-center border-b-[1px] ">
+        <div className="flex items-center mb-7 ">
+          <MdArrowRightAlt />
+          <Link href={"/about"} className="text-sm text-blue-500">
+            {" "}
+            Read moore{" "}
+          </Link>
+        </div>
+        <h1 className="text-md font-bold text-center mb-6">
+          ?Why choose HuMAP
+        </h1>
+      </div>
       {/* Accordion 1 */}
-      <div className="w-full max-w-xl mb-4">
+      {/* <div className="w-full max-w-xl mb-4">
         <div
           className="bg-gray-800 text-white lg:p-4 p-2 rounded-lg cursor-pointer mb-4 hover:bg-gray-900 transition duration-300"
           onClick={() => toggleAccordion(0)}
@@ -32,10 +44,9 @@ const Accordion = () => {
             Unlocking Insights & Transforming Organizations
           </p>
         </div>
-      </div>
-
+      </div> */}
       {/* Accordion 2 */}
-      <div className="w-full max-w-xl mb-4">
+      {/* <div className="w-full max-w-xl mb-4">
         <div
           className="bg-gray-800 text-white lg:p-4 p-2  rounded-lg cursor-pointer mb-4 hover:bg-gray-900 transition duration-300"
           onClick={() => toggleAccordion(1)}
@@ -60,10 +71,9 @@ const Accordion = () => {
             productive work environments, HuMAP empowers businesses to thrive.
           </p>
         </div>
-      </div>
-
+      </div> */}
       {/* Accordion 3 */}
-      <div className="w-full max-w-xl mb-4">
+      {/* <div className="w-full max-w-xl mb-4">
         <div
           className="bg-gray-800 text-white lg:p-4 p-2 rounded-lg cursor-pointer mb-4 hover:bg-gray-900 transition duration-300"
           onClick={() => toggleAccordion(2)}
@@ -84,16 +94,29 @@ const Accordion = () => {
             proactive steps to prevent burnout and improve productivity.
           </p>
         </div>
+      </div> */}
+
+      <div className="w-[380px] leading-10 text-xl text-center mt-5">
+        <h3>
+          HuMAP is a cutting-edge platform designed to monitor and prevent
+          workplace stress. It provides HR teams, managers and leaders with
+          real-time insights into employee well-being, helping you take
+          proactive steps to prevent burnout and improve productivity
+        </h3>
       </div>
 
       {/* Buttons for Early Access and Learn More */}
       <div className="flex justify-center mt-8 space-x-4 gap-6">
-        <button className="bg-gray-800 text-white py-2 px-6 rounded-lg hover:bg-gray-900  transition duration-300">
-          Get Early Access
-        </button>
-        <button className="bg-transparent border-2 border-gray-700 text-white py-2 px-6 rounded-lg hover:bg-gary-700 hover:text-white transition duration-300">
-          Learn more →
-        </button>
+        <Link href={"/login"}>
+          <button className="bg-gray-800 text-white py-2 px-6 rounded-lg hover:bg-gray-900  transition duration-300">
+            Get Early Access
+          </button>
+        </Link>
+        <Link href={"/about"}>
+          <button className="bg-transparent border-2 border-gray-700 text-white py-2 px-6 rounded-lg hover:bg-gary-700 hover:text-white transition duration-300">
+            → Learn more
+          </button>
+        </Link>
       </div>
     </div>
   );

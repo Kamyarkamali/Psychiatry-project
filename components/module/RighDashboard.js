@@ -3,6 +3,9 @@ import React, { useEffect, useState } from "react";
 import { VscCalendar } from "react-icons/vsc";
 import { GoSearch } from "react-icons/go";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { LiaFacebookMessenger } from "react-icons/lia";
+import { MdOutlineEmojiEvents } from "react-icons/md";
+import { MdOutlineHolidayVillage } from "react-icons/md";
 
 function RighDashboard() {
   const [today, setToday] = useState("");
@@ -14,12 +17,12 @@ function RighDashboard() {
   }, []);
 
   return (
-    <div className="shadow-md h-full border-l-[1px] py-3 flex flex-col items-center">
-      <div className="flex pl-4 items-center w-full justify-end gap-3">
+    <div className="shadow-md h-fit border-l-[1px] py-3 flex flex-col items-center">
+      <div className="flex pl-4 items-center w-full justify-center gap-3">
         <VscCalendar />
         <p>calendar</p>
       </div>
-      <div className="w-[235px]  p-5 flex justify-center rounded-lg text-right">
+      <div className="w-[235px]  p-3 flex justify-center rounded-lg text-right">
         <input
           type="date"
           id="date"
@@ -28,7 +31,6 @@ function RighDashboard() {
           className="w-[200px] p-2 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
         />
       </div>
-
       {/* search */}
       <div className="border-[1px] p-1 w-[200px] flex  justify-center">
         <input
@@ -38,10 +40,29 @@ function RighDashboard() {
         />
         <GoSearch size={30} color="gray" className="z-10" />
       </div>
+
+      <div className="border-2 w-[250px] mt-8 p-1 rounded-lg">
+        <div className="flex items-center justify-around">
+          <div className="flex items-center gap-1">
+            <p className="text-gray-600 text-[11px]">Holiday</p>
+            <MdOutlineHolidayVillage size={22} />
+          </div>
+          <div className="flex items-center gap-1">
+            <p className="text-gray-600 text-[11px]">Events</p>
+            <MdOutlineEmojiEvents size={22} />
+          </div>
+          <div className="relative">
+            <div className="flex items-center gap-1">
+              <p className="text-gray-600 text-[11px]">Messeges</p>
+              <LiaFacebookMessenger size={22} />
+            </div>
+            <div className="w-[80px] left-[6px] absolute h-[20xp] border-2  border-blue-700"></div>
+          </div>
+        </div>
+      </div>
+
       {/* search */}
-
       {/* card */}
-
       <div>
         <div className="border-2 bg-gradient-to-b from-orange-200 to-orange-100 relative  w-[240px] rounded-lg h-[130px] mt-4">
           <div className="absolute top-[10px] right-[10px] border-2 bg-white rounded-full">
@@ -124,7 +145,6 @@ function RighDashboard() {
           </div>
         </div>
       </div>
-
       {/* card */}
     </div>
   );

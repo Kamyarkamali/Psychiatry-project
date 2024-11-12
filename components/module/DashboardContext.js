@@ -20,6 +20,7 @@ import { MdComputer } from "react-icons/md";
 import { MdAccessTimeFilled } from "react-icons/md";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { MdOutlineError } from "react-icons/md";
+import HeaderDashboard from "./HeaderDashboard";
 
 // ثبت اسکیل‌ها و اجزای لازم
 ChartJS.register(
@@ -121,6 +122,9 @@ function DashboardContent() {
 
   return (
     <div className="p-8 min-h-screen">
+      <div className="w-full hidden lg:block mb-9">
+        <HeaderDashboard />
+      </div>
       <div className="grid gap-6 md:grid-cols-2 justify-center">
         {/* بخش نظرات کاربران */}
         <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col">
@@ -130,7 +134,7 @@ function DashboardContent() {
             </p>
 
             <h2 className="text-xl font-bold text-gray-700 mb-4">
-              User Comments
+              Take Proactive Action
             </h2>
           </div>
           <div className="overflow-y-auto h-48 space-y-4">
@@ -237,8 +241,8 @@ function DashboardContent() {
               <p className="text-sm">See All</p>
             </div>
             <div className="flex gap-2">
-              <h2 className="text-xl w-full font-bold text-gray-700 mb-4">
-                Time Off
+              <h2 className="text-md w-full font-bold text-gray-700 mb-4">
+                Identify Stress Triggers
               </h2>
               <IoMdTime size={30} />
             </div>
@@ -250,7 +254,7 @@ function DashboardContent() {
           <div className="border-t-[1px] border-gray-300 w-full p-1 mt-11">
             <div className="flex justify-between">
               <div className="bg-yellow-400 w-[70px] p-[1px] text-[10px] rounded-md">
-                <p className="text-sm">success</p>
+                <p className="text-sm text-center">success</p>
               </div>
 
               <div className="flex items-center gap-2">
@@ -263,7 +267,7 @@ function DashboardContent() {
           <div className="border-t-[1px] border-gray-300 w-full p-1 mt-7">
             <div className="flex justify-between">
               <div className="bg-yellow-400 w-[70px] p-[1px] text-[10px] rounded-md">
-                <p className="text-[13px]">Pemding</p>
+                <p className="text-[13px] text-center">Pending</p>
               </div>
 
               <div className="flex items-center gap-2">
@@ -276,7 +280,7 @@ function DashboardContent() {
           <div className="border-t-[1px] border-gray-300 w-full p-1 mt-7">
             <div className="flex justify-between">
               <div className="bg-yellow-400 w-[70px] p-[1px] text-[10px] rounded-md">
-                <p className="text-sm">Error</p>
+                <p className="text-sm text-center">Error</p>
               </div>
 
               <div className="flex items-center gap-2">
@@ -290,7 +294,7 @@ function DashboardContent() {
         {/* نمودار خطی */}
         <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center w-full  max-w-full">
           <h2 className="text-xl font-bold text-gray-700 mb-4">
-            Weekly Traffic
+            Actionable Insights
           </h2>
           <div className="w-full h-full max-w-md flex justify-center items-center">
             <Line data={comboData} options={comboOptions} />
@@ -299,8 +303,8 @@ function DashboardContent() {
 
         {/* نمودار دایره‌ای */}
         <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
-          <h2 className="text-xl font-bold text-gray-700 mb-4">
-            Population Distribution
+          <h2 className="text-md font-bold text-gray-700 mb-4">
+            Optimize workforce Performance
           </h2>
           <div className="w-full h-full max-w-md">
             <Doughnut data={doughnutData} />

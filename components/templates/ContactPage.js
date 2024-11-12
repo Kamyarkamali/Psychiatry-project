@@ -26,7 +26,7 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen mt-20 bg-gradient-to-r from-purple-50 to-purple-100 py-10 px-6 sm:px-12 md:px-24 flex items-center justify-center">
+    <div className="min-h-screen mt-28 bg-gradient-to-r from-purple-50 to-purple-100 py-10 px-6 sm:px-12 md:px-24 flex items-center justify-center">
       <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
         <h1 className="text-3xl font-bold text-purple-700 text-center mb-4">
           Contact Us

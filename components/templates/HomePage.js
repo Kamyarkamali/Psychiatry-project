@@ -10,7 +10,7 @@ import TypeAutomat from "../module/TypeAutomat";
 function HomePage() {
   return (
     <div>
-      <div className="absolute z-10 top-[2rem] lg:right-[10rem] right-0">
+      <div className="absolute z-10 top-[2rem] lg:right-[10rem] right-0 left-0 ">
         <TypeAutomat />
       </div>
       <div className="flex justify-between">

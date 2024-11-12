@@ -43,13 +43,16 @@ function HeaderDashboard() {
 
       {/* <div>2</div> */}
 
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex items-center gap-2">
+        <div>
+          <p className="font-bold text-gray-800">amin@gmail.com</p>
+          <p className="font-bold text-gray-800">Wellcome Back Mr Amin</p>
+        </div>
         <img
           className="w-[60px] h-[60px] rounded-[100%] object-cover"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF2yaox2cALIq_yyd-9qEyovEsficJr7X9QQ&s"
           alt="image"
         />
-        <p className="font-bold text-gray-500">amin@gmail.com</p>
       </div>
     </div>
   );
