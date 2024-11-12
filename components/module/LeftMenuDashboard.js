@@ -22,7 +22,10 @@ function LeftMenuDashboard() {
             height={200}
             alt="logo"
           />
-          <p className="text-sm text-gray-500 mt-3">Hr Manegement</p>
+          <p className="text-sm text-center w-[200px] font-bold text-gray-500 mt-3">
+            {" "}
+            HR Management
+          </p>
         </div>
       </div>
 

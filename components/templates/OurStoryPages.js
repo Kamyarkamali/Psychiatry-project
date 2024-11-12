@@ -30,7 +30,7 @@ const OurStory = () => {
         </h1>
         <p className="text-lg lg:text-xl text-gray-400 max-w-2xl mt-2">
           Founded on the belief that a healthy and happy workforce is a
-          productive one, HuMAP is dedicated to transforming workplace culture.
+          productive one, HuMAP is dedicated to transforming workplace culture
         </p>
       </div>
 
@@ -44,8 +44,8 @@ const OurStory = () => {
           <h2 className="text-3xl font-semibold text-gray-200">Our Vision</h2>
           <p className="text-lg text-gray-400 mt-4 leading-relaxed">
             At HuMAP, we envision a world where workplace stress is managed
-            proactively. Our mission is to provide organizations with the tools
-            and insights to foster healthier, more productive work environments.
+            proactively Our mission is to provide organizations with the tools
+            and insights to foster healthier, more productive work environments
           </p>
         </div>
 
@@ -54,8 +54,8 @@ const OurStory = () => {
           <p className="text-lg text-gray-400 mt-4 leading-relaxed">
             Using advanced analytics and data science, we identify stress
             triggers and provide actionable recommendations tailored to each
-            organization’s needs. We believe in a human-centered approach that
-            prioritizes mental well-being and organizational growth.
+            organization’s needs We believe in a human-centered approach that
+            prioritizes mental well-being and organizational growth
           </p>
         </div>
       </div>
@@ -68,21 +68,21 @@ const OurStory = () => {
           </h3>
           <p className="text-gray-400 text-center">
             Real-time monitoring to identify the causes of workplace stress and
-            take proactive action.
+            take proactive action
           </p>
         </div>
         <div className="flex flex-col items-center bg-gray-800 bg-opacity-70 p-6 rounded-lg transition-transform transform hover:scale-105 hover:bg-gray-700">
           <h3 className="text-xl font-semibold mb-2">Data-Driven Insights</h3>
           <p className="text-gray-400 text-center">
             Leverage advanced analytics to discover trends, enhance
-            productivity, and improve employee satisfaction.
+            productivity, and improve employee satisfaction
           </p>
         </div>
         <div className="flex flex-col items-center bg-gray-800 bg-opacity-70 p-6 rounded-lg transition-transform transform hover:scale-105 hover:bg-gray-700">
           <h3 className="text-xl font-semibold mb-2">Personalized Solutions</h3>
           <p className="text-gray-400 text-center">
             Receive actionable insights tailored to the unique needs of each
-            organization.
+            organization
           </p>
         </div>
       </div>

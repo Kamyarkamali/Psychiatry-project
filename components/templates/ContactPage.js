@@ -33,13 +33,13 @@ export default function ContactUs() {
         </h1>
         <p className="text-gray-600 text-center mb-6">
           Get in touch with us! We are here to answer your questions and meet
-          your needs. Send us a message, and we will get back to you soon.
+          your needs Send us a message, and we will get back to you soon
         </p>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm text-end font-medium text-gray-700"
             >
               Your Name
             </label>
@@ -56,7 +56,7 @@ export default function ContactUs() {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-sm text-end font-medium text-gray-700"
             >
               Your Email
             </label>
@@ -73,7 +73,7 @@ export default function ContactUs() {
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-gray-700"
+              className="block text-end text-sm font-medium text-gray-700"
             >
               Your Message
             </label>

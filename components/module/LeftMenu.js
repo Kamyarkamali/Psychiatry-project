@@ -19,7 +19,7 @@ function LeftMenu() {
         !open ? "w-[150px]" : "w-[80px]"
       }`}
     >
-      <div className="cursor-pointer relative flex justify-center items-center h-[600px]">
+      <div className="cursor-pointer relative flex justify-center items-center h-[650px]">
         {open ? (
           <RiMenu3Line size={35} color="gray" onClick={() => setOpen(!open)} />
         ) : (

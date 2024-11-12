@@ -33,6 +33,12 @@ export default function Header() {
           <Link className="hover:text-yellow-400 duration-300" href="/contact">
             Contact Us
           </Link>
+          <Link
+            className="hover:text-yellow-400 duration-300"
+            href={"/OurStory"}
+          >
+            OurStory
+          </Link>
         </nav>
 
         <div className="md:hidden">
@@ -46,7 +52,7 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden text-center p-4">
           <Link
-            className="block py-2 text-lg hover:text-yellow-400"
+            className="block p-1 text-lg hover:text-yellow-400"
             onClick={toggleMenu}
             href="/"
           >
@@ -66,6 +72,12 @@ export default function Header() {
             href="/contact"
           >
             Contact Us
+          </Link>
+          <Link
+            className="block py-2 text-lg hover:text-yellow-400"
+            href={"/OurStory"}
+          >
+            OurStory
           </Link>
         </div>
       )}

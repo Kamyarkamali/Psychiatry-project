@@ -126,7 +126,7 @@ function DashboardContent() {
       </div>
       <div className="grid gap-6 md:grid-cols-2 justify-center">
         {/* بخش نظرات کاربران */}
-        <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col">
+        <div className="bg-white h-[600px] shadow-lg rounded-lg p-6 flex flex-col">
           <div className="flex justify-between items-center">
             <p className="border-[1px] p-[2px] rounded-md  text-sm cursor-pointer">
               See All
@@ -234,7 +234,7 @@ function DashboardContent() {
         </div>
 
         {/* نمودار میله‌ای (Column Chart) */}
-        <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
+        <div className="bg-white shadow-lg h-[600px] rounded-lg p-6 flex flex-col items-center">
           <div className="flex justify-between items-center w-full">
             <div className="border-[1px] p-[3px] rounded-md border-gray-300 cursor-pointer">
               <p className="text-sm">See All</p>
@@ -291,27 +291,93 @@ function DashboardContent() {
         </div>
 
         {/* نمودار خطی */}
-        <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center w-full  max-w-full">
-          <h2 className="text-xl font-bold text-gray-700 mb-4">
+        <div className="bg-white h-[600px] shadow-lg rounded-lg p-6 flex flex-col items-center w-full max-w-full">
+          <h2 className="text-xl flex font-bold text-gray-700 mb-4">
             Actionable Insights
           </h2>
+
+          {/* بخش بالای چارت */}
+          <div className="w-full flex flex-col items-center mb-4 space-y-2">
+            <p className="text-gray-600 text-sm text-center">
+              Real-time data and insights to help you make informed decisions.
+            </p>
+            <div className="flex items-center space-x-2">
+              <span className="bg-blue-200 text-blue-600 p-1 rounded-full text-xs font-semibold">
+                Tip
+              </span>
+              <p className="text-gray-500 text-xs">
+                Use these insights to proactively reduce stress in your team.
+              </p>
+            </div>
+          </div>
+
+          {/* چارت اصلی */}
           <div className="w-full h-full max-w-md flex justify-center items-center">
             <Line data={comboData} options={comboOptions} />
+          </div>
+
+          {/* بخش پایین چارت */}
+          <div className="w-full flex flex-col items-center mt-4 space-y-2">
+            <div className="flex items-center space-x-2">
+              <span className="bg-green-200 text-green-600 p-1 rounded-full text-xs font-semibold">
+                Update
+              </span>
+              <p className="text-gray-500 text-xs">
+                Last updated: 5 minutes ago
+              </p>
+            </div>
+            <p className="text-gray-600 text-xs text-center">
+              Track the progress of stress reduction strategies over time.
+            </p>
           </div>
         </div>
 
         {/* نمودار دایره‌ای */}
-        <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
+        <div className="bg-white h-[600px] shadow-lg rounded-lg p-6 flex flex-col items-center w-full max-w-full">
           <h2 className="text-md font-bold text-gray-700 mb-4">
-            Optimize workforce Performance
+            Optimize Workforce Performance
           </h2>
+
+          {/* بخش بالای چارت */}
+          <div className="w-full flex flex-col items-center mb-4 space-y-2">
+            <p className="text-gray-600 text-sm text-center">
+              Enhance productivity through data-driven workforce insights.
+            </p>
+            <div className="flex items-center space-x-2">
+              <span className="bg-indigo-200 text-indigo-600 p-1 rounded-full text-xs font-semibold">
+                Insight
+              </span>
+              <p className="text-gray-500 text-xs">
+                Maximize employee engagement and efficiency with targeted
+                actions.
+              </p>
+            </div>
+          </div>
+
+          {/* چارت اصلی */}
           <div className="w-full h-full max-w-md flex justify-center items-center">
             <Doughnut data={doughnutData} />
+          </div>
+
+          {/* بخش پایین چارت */}
+          <div className="w-full flex flex-col items-center mt-4 space-y-2">
+            <div className="flex items-center space-x-2">
+              <span className="bg-purple-200 text-purple-600 p-1 rounded-full text-xs font-semibold">
+                Metric
+              </span>
+              <p className="text-gray-500 text-xs">
+                Productivity increased by 15% in Q4
+              </p>
+            </div>
+            <p className="text-gray-600 text-xs text-center">
+              Consistently track and improve workforce productivity and
+              retention.
+            </p>
           </div>
         </div>
 
         {/* نمودار عقربه‌ای */}
-        <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
+        {/* <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
           <h2 className="text-xl font-bold text-gray-700 mb-4">
             Vehicle Speed
           </h2>
@@ -326,9 +392,9 @@ function DashboardContent() {
               textColor="#555"
             />
           </div>
-        </div>
+        </div> */}
 
-        <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
+        {/* <div className="bg-white shadow-lg rounded-lg p-6 flex flex-col items-center">
           <div className="flex justify-between w-full">
             <p className="text-sm border-[1px] p-1 rounded-md cursor-pointer border-gray-300">
               See All
@@ -423,7 +489,7 @@ function DashboardContent() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
