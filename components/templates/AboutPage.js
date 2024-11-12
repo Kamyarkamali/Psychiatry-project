@@ -45,6 +45,16 @@ export default function AboutUs() {
         </h3>
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white flex flex-col items-center justify-center p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              Take Proactive Action
+            </h3>
+            <p className="text-gray-600">
+              We provide actionable insights to help you address stress before
+              it escalates
+            </p>
+          </div>
+
           <div className="bg-white p-6 flex flex-col items-center justify-center rounded-lg shadow-lg hover:shadow-xl transition-shadow">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
               Why HuMAP
@@ -54,16 +64,6 @@ export default function AboutUs() {
               workplace stress By combining advanced analytics with a
               human-centered approach, we create a healthier and more balanced
               work environment
-            </p>
-          </div>
-
-          <div className="bg-white flex flex-col items-center justify-center p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">
-              Take Proactive Action
-            </h3>
-            <p className="text-gray-600">
-              We provide actionable insights to help you address stress before
-              it escalates
             </p>
           </div>
 
