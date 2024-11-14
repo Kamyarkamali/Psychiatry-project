@@ -7,6 +7,8 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 
+import { FaXTwitter } from "react-icons/fa6";
+
 export default function ContactUs() {
   const [formData, setFormData] = useState({
     name: "",
@@ -97,9 +99,10 @@ export default function ContactUs() {
 
         {/* Contact Methods */}
         <div className="mt-10 text-center text-gray-600">
-          <p>You can also reach us through the following methods:</p>
-          <p className="flex items-center justify-center gap-2 mt-2 text-purple-700 font-medium">
-            <FaPhoneAlt className="text-purple-600" /> +1 123 456 7890
+          <p>:You can also reach us through the following methods</p>
+          <p className="flex flex-row-reverse items-center justify-center gap-2 mt-2 text-purple-700 font-medium">
+            <FaPhoneAlt className="text-purple-600 text-center" /> 1 123 456
+            7890+
           </p>
           <div className="flex justify-center gap-4 mt-4">
             <a
@@ -116,7 +119,7 @@ export default function ContactUs() {
               rel="noopener noreferrer"
               className="text-purple-700 hover:text-purple-800 text-2xl"
             >
-              <FaTelegram />
+              <FaXTwitter />
             </a>
             <a
               href="https://linkedin.com/in/yourprofile"
